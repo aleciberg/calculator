@@ -12,7 +12,7 @@ let button2 = document.querySelector('#button2');
 button2.addEventListener('click', event => {
     active = active + '2';
     assignResultButton(active)
-})
+}) 
 let button3 = document.querySelector('#button3'); 
 button3.addEventListener('click', event => {
     active = active + '3';

@@ -56,23 +56,22 @@ button0.addEventListener("click", (event) => {
 });
 let buttonDivide = document.querySelector("#buttonDivide");
 buttonDivide.addEventListener("click", (event) => {
-  // perform math if needed
-  result = parseInt(result);
-  active = parseInt(active);
-  if (result !== 0) {
-    console.log(`result: ${result}`, typeof result);
-    console.log(`active: ${active}`, typeof active);
-    result = result / active;
-    active = "";
-    console.log(`result: ${result}`);
-    assignResultButton(result);
-  } else {
-    result = active;
-    assignResultButton(result);
-    active = "";
-  }
+  // send active to result
+  result = active;
+  // clear active
+  active = "";
+  // set operator flag
+  operator = "divide";
 });
 let buddtonSubtract = document.querySelector("#buttonSubtract");
+buttonSubtract.addEventListener("click", (event) => {
+  // send active to result
+  result = active;
+  // clear active
+  active = "";
+  // set operator flag
+  operator = "subtract";
+});
 let buttonAdd = document.querySelector("#buttonAdd");
 buttonAdd.addEventListener("click", (event) => {
   // send active to result
@@ -83,6 +82,14 @@ buttonAdd.addEventListener("click", (event) => {
   operator = "add";
 });
 let buttonMultiply = document.querySelector("#buttonMultiply");
+buttonMultiply.addEventListener("click", (event) => {
+  // send active to result
+  result = active;
+  // clear active
+  active = "";
+  // set operator flag
+  operator = "multiply";
+});
 let equals = document.querySelector("#buttonEquals");
 equals.addEventListener("click", (event) => {
   result = parseInt(result);
@@ -92,6 +99,25 @@ equals.addEventListener("click", (event) => {
       result = result + active;
       result = result.toString();
       assignResultButton(result);
+      active = result;
+      break;
+    case "subtract":
+      result = result - active;
+      result = result.toString();
+      assignResultButton(result);
+      active = result;
+      break;
+    case "divide":
+      result = result / active;
+      result = result.toString();
+      assignResultButton(result);
+      active = result;
+      break;
+    case "multiply":
+      result = result * active;
+      result = result.toString();
+      assignResultButton(result);
+      active = result;
       break;
     default:
       break;
@@ -108,8 +134,3 @@ buttonClear.addEventListener("click", (event) => {
 function assignResultButton(string) {
   resultButton.innerText = string;
 }
-
-document.addEventListener("click", (event) => {
-  console.log(`result: ${result}`, typeof result);
-  console.log(`active: ${active}`, typeof active);
-});

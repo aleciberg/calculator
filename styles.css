@@ -1,5 +1,9 @@
 body {
-  background-color: lightgrey;
+  background: url('./sebastian-unrau-sp-p7uuT0tw-unsplash.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin: 0;
   height: 100%;
   overflow: hidden;
@@ -9,9 +13,11 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.267);  
+ backdrop-filter: blur(50px);
+ border-radius: 10px;
 }
 table {
-  border: 4px solid black;
   width: 40vh;
   height: 60vh;
   min-width: 95px;
@@ -25,19 +31,23 @@ td {
 }
 #result {
   background-color: rgb(61, 59, 59);
-  color: orange;
+  color: forestgreen;
   text-align: left;
+  border-radius: 10px;
 }
 .numbers {
   color: white;
   background-color: grey;
+  border-radius: 25px;
 }
 .modifiers {
   color: white;
-  background-color: orange;
+  background-color: #235723;
+  border-radius: 25px;
 }
 .result {
   background-color: rgb(61, 59, 59);
   bottom: 0%;
   height: 2vh;
+  border-radius: 25px;
 }

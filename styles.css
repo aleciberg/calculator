@@ -1,5 +1,5 @@
 body {
-  background: url('./sebastian-unrau-sp-p7uuT0tw-unsplash.jpg') no-repeat center center fixed;
+  background: url("background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,9 +13,9 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.267);  
- backdrop-filter: blur(50px);
- border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.267);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
 }
 table {
   width: 40vh;

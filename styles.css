@@ -1,0 +1,38 @@
+body {
+  background-color: lightgrey;
+}
+#calcBox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+table {
+  border: 4px solid black;
+  width: 40vh;
+  height: 60vh;
+}
+td {
+  border: 1px solid grey;
+  width: 10vh;
+  height: 7vh;
+  text-align: center;
+}
+#result{
+    background-color: rgb(61, 59, 59);
+    color: orange;
+}
+.numbers{
+    color: white;
+    background-color: grey;
+}
+.modifiers{
+    color: white;
+    background-color: orange;
+}
+.result{
+    background-color: rgb(61, 59, 59);
+    bottom: 0%;
+    height: 2vh;
+    text-align: left;
+}

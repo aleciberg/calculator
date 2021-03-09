@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      table {
-        border-style: solid;
-      }
-      td {
-        border-style: dashed;
-      }
-    </style>
+    <link rel='stylesheet' href='./styles.css'>
   </head>
   <body>
-    <h1>Calculator</h1>
-    <table>
-      <tr>
-        <td colspan="4"><h3 id="result">0</h3></td>
-      </tr>
-      <tr>
-        <td colspan="3" id="buttonClear">C</td>
-        <td id="buttonMultiply">*</td>
-      </tr>
-      <tr>
-        <td id="button7">7</td>
-        <td id="button8">8</td>
-        <td id="button9">9</td>
-        <td id="buttonAdd">+</td>
-      </tr>
-      <tr>
-        <td id="button4">4</td>
-        <td id="button5">5</td>
-        <td id="button6">6</td>
-        <td id="buttonSubtract">-</td>
-      </tr>
-      <tr>
-        <td id="button1">1</td>
-        <td id="button2">2</td>
-        <td id="button3">3</td>
-        <td id="buttonDivide">/</td>
-      </tr>
-      <tr>
-        <td colspan="3" id="button0">0</td>
-        <td id="buttonEquals">=</td>
-      </tr>
-    </table>
+    <div id="calcBox">
+      <table>
+        <tr>
+          <td colspan="4" id='result'><h3 id="result" class='result'>0</h3></td>
+        </tr>
+        <tr>
+          <td colspan="3" id="buttonClear" class="modifiers">C</td>
+          <td id="buttonMultiply" class="modifiers">*</td>
+        </tr>
+        <tr>
+          <td id="button7" class="numbers">7</td>
+          <td id="button8" class="numbers">8</td>
+          <td id="button9" class="numbers">9</td>
+          <td id="buttonAdd" class="modifiers">+</td>
+        </tr>
+        <tr>
+          <td id="button4" class="numbers">4</td>
+          <td id="button5" class="numbers">5</td>
+          <td id="button6" class="numbers">6</td>
+          <td id="buttonSubtract" class="modifiers">-</td>
+        </tr>
+        <tr>
+          <td id="button1" class="numbers">1</td>
+          <td id="button2" class="numbers">2</td>
+          <td id="button3" class="numbers">3</td>
+          <td id="buttonDivide" class="modifiers">/</td>
+        </tr>
+        <tr>
+          <td colspan="3" id="button0" class="numbers">0</td>
+          <td id="buttonEquals" class="modifiers">=</td>
+        </tr>
+      </table>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
